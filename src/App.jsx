@@ -240,19 +240,19 @@ function App() {
         <ScrollReveal delay={0.1}>
           <section className="mb-12 md:mb-16">
             <div className="flex items-center mb-6 md:mb-8">
-              <GraduationCap className="text-blue-600 dark:text-blue-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
-              <h2 className="text-xl sm:text-2xl font-bold dark:text-white">教育经历</h2>
+              <GraduationCap className="text-blue-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
+              <h2 className="text-xl sm:text-2xl font-bold text-white">教育经历</h2>
             </div>
             
             <div className="grid md:grid-cols-2 gap-4 md:gap-6">
               {resumeData.education.map((edu, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div key={index} className="bg-[#111827] rounded-xl p-6 shadow-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-white">{edu.institution}</h3>
                       <p className="text-gray-300">{edu.degree}</p>
                     </div>
-                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">
+                    <span className="px-3 py-1 bg-blue-900/30 text-blue-200 rounded-full text-sm">
                       {edu.period}
                     </span>
                   </div>
@@ -269,7 +269,7 @@ function App() {
                       <p className="font-semibold text-gray-300 mb-2">主修课程:</p>
                       <div className="flex flex-wrap gap-2">
                         {edu.courses.map((course, i) => (
-                          <span key={i} className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">
+                          <span key={i} className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm">
                             {course}
                           </span>
                         ))}
@@ -290,13 +290,13 @@ function App() {
         <ScrollReveal delay={0.2}>
           <section className="mb-12 md:mb-16">
             <div className="flex items-center mb-6 md:mb-8">
-              <Briefcase className="text-purple-600 dark:text-purple-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
-              <h2 className="text-xl sm:text-2xl font-bold dark:text-white">工作与项目经历</h2>
+              <Briefcase className="text-purple-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
+              <h2 className="text-xl sm:text-2xl font-bold text-white">工作与项目经历</h2>
             </div>
             
             <div className="space-y-4 md:space-y-6">
               {resumeData.experiences.map((exp, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div key={index} className="bg-[#111827] rounded-xl p-6 shadow-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-white">
@@ -304,7 +304,7 @@ function App() {
                       </h3>
                       <p className="text-gray-300">{exp.company}</p>
                     </div>
-                    <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 rounded-full text-sm">
+                    <span className="px-3 py-1 bg-purple-900/30 text-purple-200 rounded-full text-sm">
                       {exp.period}
                     </span>
                   </div>
@@ -312,7 +312,7 @@ function App() {
                   <ul className="space-y-3">
                     {exp.responsibilities.map((resp, i) => (
                       <li key={i} className="flex items-start">
-                        <ChevronRight size={16} className="text-blue-500 mt-1 mr-2 flex-shrink-0" />
+                        <ChevronRight size={16} className="text-blue-400 mt-1 mr-2 flex-shrink-0" />
                         <span className="text-gray-400">{resp}</span>
                       </li>
                     ))}
@@ -327,19 +327,19 @@ function App() {
         <ScrollReveal delay={0.3}>
           <section className="mb-12 md:mb-16">
             <div className="flex items-center mb-6 md:mb-8">
-                <Users className="text-green-600 dark:text-green-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
-              <h2 className="text-xl sm:text-2xl font-bold dark:text-white">校园经历</h2>
+                <Users className="text-green-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
+              <h2 className="text-xl sm:text-2xl font-bold text-white">校园经历</h2>
             </div>
             
             <div className="grid md:grid-cols-2 gap-4 md:gap-6">
               {resumeData.campusActivities.map((activity, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div key={index} className="bg-[#111827] rounded-xl p-6 shadow-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-white">{activity.title}</h3>
                       <p className="text-gray-300">{activity.organization}</p>
                     </div>
-                    <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">
+                    <span className="px-3 py-1 bg-green-900/30 text-green-200 rounded-full text-sm">
                       {activity.period}
                     </span>
                   </div>
@@ -347,7 +347,7 @@ function App() {
                   <ul className="space-y-2">
                     {activity.responsibilities.map((resp, i) => (
                       <li key={i} className="flex items-start">
-                        <ChevronRight size={16} className="text-green-500 mt-1 mr-2 flex-shrink-0" />
+                        <ChevronRight size={16} className="text-green-400 mt-1 mr-2 flex-shrink-0" />
                         <span className="text-gray-400">{resp}</span>
                       </li>
                     ))}
@@ -362,22 +362,22 @@ function App() {
         <ScrollReveal delay={0.4}>
           <section className="mb-12 md:mb-16">
             <div className="flex items-center mb-6 md:mb-8">
-                <Code className="text-orange-600 dark:text-orange-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
-              <h2 className="text-xl sm:text-2xl font-bold dark:text-white">技能与能力</h2>
+                <Code className="text-orange-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
+              <h2 className="text-xl sm:text-2xl font-bold text-white">技能与能力</h2>
             </div>
             
             <div className="grid md:grid-cols-3 gap-4 md:gap-6">
               {/* 专业技能 */}
-              <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+              <div className="bg-[#111827] rounded-xl p-6 shadow-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
                 <h3 className="text-lg font-bold mb-4 text-white">专业技能</h3>
                 <div className="space-y-4">
                   {resumeData.skills.professional.map((skill, index) => (
                     <div key={index}>
                       <div className="flex justify-between mb-1">
-                        <span className="text-gray-400">{skill.name}</span>
-                        <span className="text-gray-500">{skill.level}%</span>
+                        <span className="text-gray-300">{skill.name}</span>
+                        <span className="text-gray-400">{skill.level}%</span>
                       </div>
-                      <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                      <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
                         <div 
                           className="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
                           style={{ width: `${skill.level}%` }}
@@ -389,26 +389,26 @@ function App() {
               </div>
               
               {/* 语言能力 */}
-              <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-bold mb-4 dark:text-white">语言能力</h3>
+              <div className="bg-[#111827] rounded-xl p-6 shadow-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
+                <h3 className="text-lg font-bold mb-4 text-white">语言能力</h3>
                 <div className="space-y-4">
                   {resumeData.skills.languages.map((lang, index) => (
-                    <div key={index} className="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                      <span className="font-medium dark:text-gray-300">{lang.name}</span>
-                      <span className="text-gray-600 dark:text-gray-400">{lang.level}</span>
+                    <div key={index} className="flex justify-between items-center p-3 bg-gray-800 rounded-lg">
+                      <span className="font-medium text-gray-300">{lang.name}</span>
+                      <span className="text-gray-400">{lang.level}</span>
                     </div>
                   ))}
                 </div>
               </div>
               
               {/* 个人优势 */}
-              <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-bold mb-4 dark:text-white">个人优势</h3>
+              <div className="bg-[#111827] rounded-xl p-6 shadow-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
+                <h3 className="text-lg font-bold mb-4 text-white">个人优势</h3>
                 <div className="space-y-3">
                   {resumeData.skills.strengths.map((strength, index) => (
-                    <div key={index} className="flex items-center p-3 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-800 rounded-lg">
+                    <div key={index} className="flex items-center p-3 bg-gray-800 rounded-lg">
                       <Star size={16} className="text-yellow-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700 dark:text-gray-300">{strength}</span>
+                      <span className="text-gray-300">{strength}</span>
                     </div>
                   ))}
                 </div>
@@ -421,32 +421,32 @@ function App() {
         <ScrollReveal delay={0.45}>
           <section className="mb-12 md:mb-16">
             <div className="flex items-center mb-6 md:mb-8">
-                <FileText className="text-red-600 dark:text-red-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
-              <h2 className="text-xl sm:text-2xl font-bold dark:text-white">证书与认证</h2>
+                <FileText className="text-red-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
+              <h2 className="text-xl sm:text-2xl font-bold text-white">证书与认证</h2>
             </div>
             
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-4 md:p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div className="bg-[#111827] rounded-xl p-4 md:p-6 shadow-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
               <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-                <div className="p-6 bg-gradient-to-br from-red-50 to-orange-50 dark:from-gray-700 dark:to-gray-800 rounded-xl border border-red-100 dark:border-red-900">
+                <div className="p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-gray-600 transition-all duration-300">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-lg flex items-center justify-center mr-4">
                       <Award size={24} className="text-white" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white shadow-[0_0_15px_rgba(239,68,68,0.7)]">雅思 (IELTS) 7.5分</h3>
+                      <h3 className="text-xl font-bold text-white">雅思 (IELTS) 7.5分</h3>
                       <p className="text-gray-300">国际英语语言测试系统</p>
                     </div>
                   </div>
                   <p className="text-gray-400 mb-4">
                     优秀的英语听说读写综合能力，具备跨文化沟通和处理英文工作文档的专业水平。
                   </p>
-                  <div className="flex items-center text-sm text-gray-500">
+                  <div className="flex items-center text-sm text-gray-400">
                     <Calendar size={14} className="mr-2" />
                     <span>有效期: 2025年12月</span>
                   </div>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-800 rounded-xl border border-blue-100 dark:border-blue-900">
+                <div className="p-6 bg-gray-800 rounded-xl border border-gray-700 hover:border-gray-600 transition-all duration-300">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center mr-4">
                       <Award size={24} className="text-white" />
@@ -459,7 +459,7 @@ function App() {
                   <p className="text-gray-400 mb-4">
                     优秀的英语阅读和写作能力，具备处理专业英文文献和商务文档的能力。
                   </p>
-                  <div className="flex items-center text-sm text-gray-500">
+                  <div className="flex items-center text-sm text-gray-400">
                     <Calendar size={14} className="mr-2" />
                     <span>获得时间: 2024年6月</span>
                   </div>
@@ -473,19 +473,19 @@ function App() {
         <ScrollReveal delay={0.5}>
           <section className="mb-12 md:mb-16">
             <div className="flex items-center mb-6 md:mb-8">
-              <Award className="text-yellow-600 dark:text-yellow-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
-              <h2 className="text-xl sm:text-2xl font-bold dark:text-white">奖项与荣誉</h2>
+              <Award className="text-yellow-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
+              <h2 className="text-xl sm:text-2xl font-bold text-white">奖项与荣誉</h2>
             </div>
             
             <div className="grid md:grid-cols-2 gap-4 md:gap-6">
               {resumeData.awards.map((award, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div key={index} className="bg-[#111827] rounded-xl p-6 shadow-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
                   <div className="flex items-start">
                     <Award size={20} className="text-yellow-500 mt-1 mr-3 flex-shrink-0" />
                     <div>
-                      <h3 className="text-lg font-bold dark:text-white">{award.title}</h3>
-                      <p className="text-gray-600 dark:text-gray-400">{award.description}</p>
-                      <span className="text-sm text-gray-500 dark:text-gray-500">{award.period}</span>
+                      <h3 className="text-lg font-bold text-white">{award.title}</h3>
+                      <p className="text-gray-300">{award.description}</p>
+                      <span className="text-sm text-gray-400">{award.period}</span>
                     </div>
                   </div>
                 </div>
@@ -498,19 +498,19 @@ function App() {
         <ScrollReveal delay={0.6}>
           <section className="mb-12 md:mb-16">
             <div className="flex items-center mb-6 md:mb-8">
-              <BookOpen className="text-indigo-600 dark:text-indigo-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
-              <h2 className="text-xl sm:text-2xl font-bold dark:text-white">近期阅读</h2>
+              <BookOpen className="text-indigo-400 mr-3 w-5 h-5 sm:w-6 sm:h-6" size={20} />
+              <h2 className="text-xl sm:text-2xl font-bold text-white">近期阅读</h2>
             </div>
             
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-4 md:p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+            <div className="bg-[#111827] rounded-xl p-4 md:p-6 shadow-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
               <div className="grid md:grid-cols-3 gap-4 md:gap-6">
                 {resumeData.readings.map((book, index) => (
-                  <div key={index} className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                  <div key={index} className="p-4 bg-gray-800 rounded-lg border border-gray-700 hover:border-gray-600 transition-all duration-300">
                     <div className="flex items-center mb-2">
                       <BookOpen size={16} className="text-indigo-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-300 font-medium">书籍 {index + 1}</span>
+                      <span className="text-white font-medium">书籍 {index + 1}</span>
                     </div>
-                    <p className="text-gray-600 dark:text-gray-400">{book}</p>
+                    <p className="text-gray-300">{book}</p>
                   </div>
                 ))}
               </div>
