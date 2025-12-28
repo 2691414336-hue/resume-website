@@ -175,8 +175,8 @@ function App() {
               </button>
               
               <a 
-                href="../郭大鹏简历.docx" 
-                download
+                href="/郭大鹏简历.pdf" 
+                download="郭大鹏简历.pdf"
                 className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:opacity-90 transition-opacity"
               >
                 <Download size={18} />
